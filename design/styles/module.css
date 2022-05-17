@@ -215,12 +215,13 @@ header .profilePicture img {
 }
 .popular__products article img {
   width: 100%;
-  height: 85px;
+  height: 70px;
   margin-bottom: 20px;
+  object-fit: cover;
 }
 .popular__products article h5 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 5px;
 }
 .popular__products article p {
