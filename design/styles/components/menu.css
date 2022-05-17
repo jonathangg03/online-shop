@@ -1,0 +1,33 @@
+.menu {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 5px 40px;
+  height: 75px;
+}
+.menu li {
+  font-size: 1.6rem;
+  color: #dbdbdb;
+  display: flex;
+  justify-content: center;
+  height: 65px;
+  width: 65px;
+  align-items: center;
+}
+.menu .selected {
+  background-color: #ff7b7d;
+  height: 65px;
+  width: 65px;
+  border-radius: 999px;
+  border: 5px solid white;
+  transform: translateY(-25px);
+  color: white;
+}
+
+/*# sourceMappingURL=menu.css.map */
