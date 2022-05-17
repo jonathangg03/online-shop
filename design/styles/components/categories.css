@@ -20,6 +20,7 @@
 .categories__item i {
   font-size: 1.9rem;
   padding-right: 10px;
+  color: #dbdbdb;
 }
 .categories__item p {
   font-size: 1.2rem;
@@ -27,6 +28,9 @@
   font-weight: 500;
 }
 .categories .selected {
+  color: #ff7b7d;
+}
+.categories .selected i {
   color: #ff7b7d;
 }
 .categories .selected p {

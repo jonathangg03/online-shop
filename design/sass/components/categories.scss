@@ -21,6 +21,7 @@
     i {
       font-size: 1.9rem;
       padding-right: 10px;
+      color: $colorSoft;
     }
 
     p {
@@ -32,6 +33,9 @@
 
   .selected {
     color: $colorMain;
+    i {
+      color: $colorMain;
+    }
     p {
       color: $colorMain;
     }

@@ -14,12 +14,13 @@
   height: 75px;
   li {
     font-size: 1.6rem;
-    color: $colorsoft;
+    color: $colorSoft;
     display: flex;
     justify-content: center;
     height: 65px;
     width: 65px;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 15px;
   }
 
   .selected {
@@ -27,8 +28,10 @@
     height: 65px;
     width: 65px;
     border-radius: 999px;
-    border: 5px solid white;
+    border: 6px solid white;
     transform: translateY(-25px);
     color: white;
+    align-items: center;
+    padding-top: 0;
   }
 }

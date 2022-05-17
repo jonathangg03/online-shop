@@ -12,7 +12,8 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f8f8f8;
   min-height: 100vh;
-  padding: 10px 10px 100px;
+  padding: 15px 15px 100px;
+  color: #4d4d4d;
 }
 
 header {
@@ -60,7 +61,7 @@ header .profilePicture img {
 }
 .search input {
   height: 100%;
-  width: 80%;
+  width: 82%;
   border: none;
   border-radius: 12px;
   font-family: "Poppins", sans-serif;
@@ -106,7 +107,7 @@ header .profilePicture img {
 }
 .offers__list-details span {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 300;
 }
 .offers__list-details div {
   font-size: 2.6rem;
@@ -168,6 +169,7 @@ header .profilePicture img {
 .categories__item i {
   font-size: 1.9rem;
   padding-right: 10px;
+  color: #dbdbdb;
 }
 .categories__item p {
   font-size: 1.2rem;
@@ -175,6 +177,9 @@ header .profilePicture img {
   font-weight: 500;
 }
 .categories .selected {
+  color: #ff7b7d;
+}
+.categories .selected i {
   color: #ff7b7d;
 }
 .categories .selected p {
@@ -220,13 +225,14 @@ header .profilePicture img {
   object-fit: cover;
 }
 .popular__products article h5 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 600;
   padding-bottom: 5px;
 }
 .popular__products article p {
   font-size: 1.2rem;
   padding-bottom: 5px;
+  color: gray;
 }
 .popular__products article h6 {
   font-size: 1.5rem;
@@ -243,7 +249,7 @@ header .profilePicture img {
   height: 10px;
   position: absolute;
   color: white;
-  font-weight: 700;
+  font-weight: 400;
   height: 20px;
   top: 8px;
   left: 5px;
@@ -269,16 +275,19 @@ header .profilePicture img {
   justify-content: center;
   height: 65px;
   width: 65px;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 15px;
 }
 .menu .selected {
   background-color: #ff7b7d;
   height: 65px;
   width: 65px;
   border-radius: 999px;
-  border: 5px solid white;
+  border: 6px solid white;
   transform: translateY(-25px);
   color: white;
+  align-items: center;
+  padding-top: 0;
 }
 
 /*# sourceMappingURL=module.css.map */

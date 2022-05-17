@@ -34,13 +34,14 @@
   object-fit: cover;
 }
 .popular__products article h5 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 600;
   padding-bottom: 5px;
 }
 .popular__products article p {
   font-size: 1.2rem;
   padding-bottom: 5px;
+  color: gray;
 }
 .popular__products article h6 {
   font-size: 1.5rem;
@@ -57,7 +58,7 @@
   height: 10px;
   position: absolute;
   color: white;
-  font-weight: 700;
+  font-weight: 400;
   height: 20px;
   top: 8px;
   left: 5px;
