@@ -1,0 +1,42 @@
+@import './variables.scss';
+
+.categories {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 11px;
+  margin-bottom: 30px;
+
+  &__item {
+    margin-right: 20px;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-radius: $radiusMain;
+    box-shadow: $shadowMain;
+    i {
+      font-size: 1.9rem;
+      padding-right: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: gray;
+      font-weight: 500;
+    }
+  }
+
+  .selected {
+    color: $colorMain;
+    p {
+      color: $colorMain;
+    }
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,3 +1,39 @@
-
+.categories {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 11px;
+  margin-bottom: 30px;
+}
+.categories__item {
+  margin-right: 20px;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px #0000000a;
+}
+.categories__item i {
+  font-size: 1.9rem;
+  padding-right: 10px;
+}
+.categories__item p {
+  font-size: 1.2rem;
+  color: gray;
+  font-weight: 500;
+}
+.categories .selected {
+  color: #ff7b7d;
+}
+.categories .selected p {
+  color: #ff7b7d;
+}
+.categories__item:last-child {
+  margin-right: 0;
+}
 
 /*# sourceMappingURL=categories.css.map */

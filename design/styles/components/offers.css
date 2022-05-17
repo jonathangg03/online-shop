@@ -1,0 +1,66 @@
+.offers {
+  margin-bottom: 20px;
+}
+.offers__list {
+  height: 170px;
+  background-color: red;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #020024 0%, #7f52ba 0%, #81d1e5 100%);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.offers__list-details {
+  background-color: #ffffff6b;
+  width: 150px;
+  padding: 10px;
+  height: 100%;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.offers__list-details span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.offers__list-details div {
+  font-size: 2.6rem;
+  text-shadow: -7px 4px 5px #00000054;
+  font-weight: 500;
+}
+.offers__list-details .percentage {
+  font-size: 5.4rem;
+  height: 60px;
+  font-weight: 500;
+}
+.offers__list-image {
+  width: calc(100% - 180px);
+  height: 100%;
+  border-radius: 12px;
+}
+.offers__list-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.offers__counter {
+  height: 11px;
+  display: flex;
+  justify-content: center;
+}
+.offers__counter div {
+  width: 11px;
+  height: 100%;
+  background-color: white;
+  border: 2px solid #ff7b7d;
+  border-radius: 999px;
+  margin: 0 3px;
+}
+.offers__counter .selected {
+  width: 30px;
+  background-color: #ff7b7d;
+}
+
+/*# sourceMappingURL=offers.css.map */
