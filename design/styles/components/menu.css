@@ -19,7 +19,7 @@
   height: 65px;
   width: 65px;
   align-items: flex-start;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 .menu .selected {
   background-color: #ff7b7d;
