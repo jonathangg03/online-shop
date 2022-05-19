@@ -14,13 +14,15 @@
   height: 75px;
   li {
     font-size: 1.4rem;
-    color: $colorSoft;
     display: flex;
     justify-content: center;
     height: 65px;
     width: 65px;
     align-items: flex-start;
     padding-top: 20px;
+    a {
+      color: $colorSoft;
+    }
   }
 
   .selected {
@@ -33,5 +35,8 @@
     color: white;
     align-items: center;
     padding-top: 0;
+    a {
+      color: white;
+    }
   }
 }

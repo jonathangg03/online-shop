@@ -271,13 +271,15 @@ header .profilePicture img {
 }
 .menu li {
   font-size: 1.4rem;
-  color: #dbdbdb;
   display: flex;
   justify-content: center;
   height: 65px;
   width: 65px;
   align-items: flex-start;
   padding-top: 20px;
+}
+.menu li a {
+  color: #dbdbdb;
 }
 .menu .selected {
   background-color: #ff7b7d;
@@ -289,6 +291,9 @@ header .profilePicture img {
   color: white;
   align-items: center;
   padding-top: 0;
+}
+.menu .selected a {
+  color: white;
 }
 
 /*# sourceMappingURL=module.css.map */
