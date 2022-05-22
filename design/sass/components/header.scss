@@ -1,59 +1,42 @@
 @import './variables.scss';
 
 header {
-  background-color: #5252e2;
-  height: 210px;
-  border-radius: 0 0 15px 15px;
-  padding: 20px 10px 0;
-  color: white;
-  h3 {
-    font-weight: 500;
-    font-size: 1.6rem;
-    padding-bottom: 8px;
-  }
-
-  .recomendation {
-    width: 100%;
-    height: 125px;
-    background-color: #e07096;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    padding: 10px;
-
-    &__description {
-      padding-top: 20px;
-
-      &-type {
-        font-size: 2.5rem;
-        font-weight: 700;
-        letter-spacing: 0.1rem;
-        color: #ffffffa3;
-      }
-
-      &-product {
-      }
-
-      &-price {
-      }
-    }
-  }
-
-  .pageIndicator {
-    height: 10px;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  .cart {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: white;
     display: flex;
-    justify-content: center;
     align-items: center;
-    div {
-      margin: 0 12px;
-      width: 10px;
-      border-radius: 99px;
-      height: 100%;
-      background-color: white;
+    justify-content: center;
+    font-size: 1.8rem;
+    border-radius: 999px;
+    box-shadow: $shadowMain;
+
+    i {
+      color: $colorMain;
     }
-    .selected {
-      width: 22px;
-      height: 87%;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .profilePicture {
+    height: 45px;
+    width: 45px;
+
+    img {
+      border-radius: 999px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      box-shadow: $shadowMain;
     }
   }
 }

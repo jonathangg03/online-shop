@@ -1,0 +1,31 @@
+.search {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.search input {
+  height: 100%;
+  width: 82%;
+  border: none;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  padding: 0 10px 0 20px;
+  font-size: 1.2rem;
+  outline-color: #ff7b7d;
+  box-shadow: 2px 2px 5px #0000000a;
+  color: #4d4d4d;
+}
+.search button {
+  height: 48px;
+  width: 48px;
+  border: none;
+  background-color: #ff7b7d;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/*# sourceMappingURL=search.css.map */

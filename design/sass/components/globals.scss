@@ -12,5 +12,8 @@ html {
 
 body {
   font-family: $fontMain;
-  background-color: #f7f7f7;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  padding: 15px 15px 100px;
+  color: $colorHard;
 }

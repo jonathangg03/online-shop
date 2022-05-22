@@ -10,7 +10,10 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f7f7f7;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  padding: 15px 15px 100px;
+  color: #4d4d4d;
 }
 
 /*# sourceMappingURL=globals.css.map */

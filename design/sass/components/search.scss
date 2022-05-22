@@ -1,0 +1,34 @@
+@import './variables.scss';
+
+.search {
+  // border: 1px solid $colorMain;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  input {
+    height: 100%;
+    width: 82%;
+    border: none;
+    border-radius: $radiusMain;
+    font-family: $fontMain;
+    padding: 0 10px 0 20px;
+    font-size: 1.2rem;
+    outline-color: $colorMain;
+    box-shadow: $shadowMain;
+    color: $colorHard;
+  }
+
+  button {
+    height: 48px;
+    width: 48px;
+    border: none;
+    background-color: $colorMain;
+    border-radius: $radiusMain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+}
