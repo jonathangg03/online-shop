@@ -2,7 +2,12 @@ import styled from 'styled-jsx/css'
 import { color } from '../../styles/theme'
 
 const globals = styled.global`
-  html,
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
   body {
     padding: 0;
     margin: 0;
@@ -21,10 +26,6 @@ const globals = styled.global`
   a {
     color: inherit;
     text-decoration: none;
-  }
-
-  * {
-    box-sizing: border-box;
   }
 `
 

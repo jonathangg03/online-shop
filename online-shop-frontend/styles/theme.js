@@ -9,7 +9,8 @@ const font = {
 }
 
 const radius = {
-  main: '12px'
+  main: '12px',
+  round: '999px'
 }
 
 const shadow = {
