@@ -1,4 +1,4 @@
-import { styles, globals } from './styles'
+// import { styles, globals } from './styles'
 
 const Layout = ({ children }) => {
   return (

@@ -1,5 +1,5 @@
-import styles from './styles'
-import { FaSearch } from 'react-icons/fa'
+// import styles from './styles'
+// import { FaSearch } from 'react-icons/fa'
 
 const SearchForm = () => {
   return (
