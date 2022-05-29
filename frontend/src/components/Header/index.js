@@ -4,7 +4,7 @@ import { FaShoppingBasket } from 'react-icons/fa'
 const HeaderComponent = () => {
   return (
     <Header>
-      <Cart className='cart'>
+      <Cart>
         <FaShoppingBasket className='cart__icon' />
       </Cart>
       <Title>Home</Title>

@@ -1,4 +1,4 @@
-const fonts = {
+const font = {
   main: 'Poppins, sans-serif'
 }
 
@@ -16,4 +16,4 @@ const shadow = {
   main: '2px 2px 5px #0000000a'
 }
 
-export { fonts, color, radius, shadow }
+export { font, color, radius, shadow }
