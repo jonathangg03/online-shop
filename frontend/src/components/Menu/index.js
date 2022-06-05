@@ -6,7 +6,7 @@ const MenuComponent = () => {
   return (
     <nav>
       <Menu>
-        <li class='selected' title='home'>
+        <li className='selected' title='home'>
           <a href='./index.html'>
             <MdHome />
           </a>

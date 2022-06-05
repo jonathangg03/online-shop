@@ -14,7 +14,7 @@ const Popular = () => {
           <h5>Nike shoes</h5>
           <p>Tenis verdes Nike de Tallas 40, 41, 42, 43</p>
           <h6>₡12000</h6>
-          <div class='new'>Nuevo</div>
+          <div className='new'>Nuevo</div>
         </article>
         <article>
           <img src={Tennis} alt='tennis' width='20' height='20' />

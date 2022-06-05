@@ -1,19 +1,27 @@
-import Categories from '../Categories'
-import Header from '../Header'
-import Menu from '../Menu'
-import Offers from '../Offers'
-import Popular from '../Popular'
-import SearchForm from '../SearchForm'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from '../Layout'
+import Home from '../../pages/Home'
 
-export default function Home() {
+export default function App() {
+  const token = true
+
   return (
     <>
-      <Header />
-      <SearchForm />
-      <Offers />
-      <Categories />
-      <Popular />
-      <Menu />
+      {token ? (
+        <Layout>
+          <BrowserRouter>
+            <Routes>
+              <Route path='/' element={<Home />} />
+            </Routes>
+          </BrowserRouter>
+        </Layout>
+      ) : (
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      )}
     </>
   )
 }

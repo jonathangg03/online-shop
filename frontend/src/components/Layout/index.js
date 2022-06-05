@@ -1,14 +1,11 @@
-// import { styles, globals } from './styles'
+import Menu from '../Menu'
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <div>{children}</div>
-      <style jsx>{styles}</style>
-      <style jsx global>
-        {globals}
-      </style>
-    </>
+    <main>
+      {children}
+      <Menu />
+    </main>
   )
 }
 

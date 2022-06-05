@@ -5,20 +5,20 @@ import { BsSmartwatch } from 'react-icons/bs'
 
 const CategoriesComponent = () => {
   return (
-    <Categories class='categories'>
+    <Categories className='categories'>
       <Item className='selected'>
         <FaThLarge />
         <p>Todo</p>
       </Item>
-      <Item class='categories__item'>
+      <Item className='categories__item'>
         <GiRunningShoe />
         <p>Calzado</p>
       </Item>
-      <Item class='categories__item'>
+      <Item className='categories__item'>
         <BsSmartwatch />
         <p>Relojes</p>
       </Item>
-      <Item class='categories__item'>
+      <Item className='categories__item'>
         <FaTshirt />
         <p>Ropa</p>
       </Item>
