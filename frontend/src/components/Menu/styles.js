@@ -14,7 +14,7 @@ const Menu = styled.ul`
   padding: 5px 40px;
   height: 75px;
   li {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     display: flex;
     justify-content: center;
     height: 65px;
@@ -23,6 +23,11 @@ const Menu = styled.ul`
     padding-top: 20px;
     a {
       color: ${color.soft};
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
