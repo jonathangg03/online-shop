@@ -14,7 +14,7 @@ const Menu = styled.ul`
   padding: 5px 40px;
   height: 75px;
   li {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     display: flex;
     justify-content: center;
     height: 65px;
@@ -41,7 +41,6 @@ const Menu = styled.ul`
     color: white;
     align-items: center;
     padding-top: 0;
-    font-size: 2.3rem;
     a {
       color: white;
     }
