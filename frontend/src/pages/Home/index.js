@@ -7,7 +7,7 @@ import SearchForm from '../../components/SearchForm'
 const Home = () => {
   return (
     <>
-      <Header />
+      <Header title='Home' />
       <SearchForm />
       <Offers />
       <Categories />
