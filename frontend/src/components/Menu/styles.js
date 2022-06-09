@@ -20,7 +20,7 @@ const Menu = styled.ul`
     height: 65px;
     width: 65px;
     align-items: flex-start;
-    padding-top: 20px;
+    transition: 0.3s;
     a {
       color: ${color.soft};
       width: 100%;
@@ -29,6 +29,10 @@ const Menu = styled.ul`
       justify-content: center;
       align-items: center;
     }
+  }
+
+  li:first-child {
+    font-size: 2.4rem;
   }
 
   .selected {

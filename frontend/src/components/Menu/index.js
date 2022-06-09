@@ -1,7 +1,7 @@
 import { MdHome } from 'react-icons/md'
 import { FaHeart, FaShoppingBasket, FaSearch } from 'react-icons/fa'
 import { Menu } from './styles'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const MenuComponent = () => {
   const location = useLocation()
@@ -13,33 +13,33 @@ const MenuComponent = () => {
           className={location.pathname === '/' ? 'selected' : ''}
           title='home'
         >
-          <a href='./index.html'>
+          <Link to='/'>
             <MdHome />
-          </a>
+          </Link>
         </li>
         <li
           className={location.pathname === '/liked' ? 'selected' : ''}
           title='like'
         >
-          <a href='./liked.html'>
+          <Link to='./liked'>
             <FaHeart />
-          </a>
+          </Link>
         </li>
         <li
           className={location.pathname === '/search' ? 'selected' : ''}
           title='search'
         >
-          <a href='./search.html'>
+          <Link to='./search'>
             <FaSearch />
-          </a>
+          </Link>
         </li>
         <li
           className={location.pathname === '/cart' ? 'selected' : ''}
           title='cart'
         >
-          <a href='./cart.html'>
+          <Link to='/cart'>
             <FaShoppingBasket />
-          </a>
+          </Link>
         </li>
       </Menu>
     </nav>
