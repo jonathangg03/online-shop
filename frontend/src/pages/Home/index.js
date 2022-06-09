@@ -1,5 +1,4 @@
 import Categories from '../../components/Categories'
-import Header from '../../components/Header'
 import Offers from '../../components/Offers'
 import Popular from '../../components/Popular'
 import SearchForm from '../../components/SearchForm'
@@ -7,7 +6,6 @@ import SearchForm from '../../components/SearchForm'
 const Home = () => {
   return (
     <>
-      <Header title='Home' />
       <SearchForm />
       <Offers />
       <Categories />

@@ -12,16 +12,14 @@ export default function App() {
         <BrowserRouter>
           <Layout>
             <Routes>
-              <Route path='/' element={<Home />} />
+              <Route path='/home' element={<Home />} />
               <Route path='/liked' element={<Liked />} />
             </Routes>
           </Layout>
         </BrowserRouter>
       ) : (
         <BrowserRouter>
-          <Routes>
-            <Route path='/' element={<Home />} />
-          </Routes>
+          <Routes>{/* <Route path='/' element={<Home />} /> */}</Routes>
         </BrowserRouter>
       )}
     </>

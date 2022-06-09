@@ -10,10 +10,10 @@ const MenuComponent = () => {
     <nav>
       <Menu>
         <li
-          className={location.pathname === '/' ? 'selected' : ''}
+          className={location.pathname === '/home' ? 'selected' : ''}
           title='home'
         >
-          <Link to='/'>
+          <Link to='/home'>
             <MdHome />
           </Link>
         </li>
