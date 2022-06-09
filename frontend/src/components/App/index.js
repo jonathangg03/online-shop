@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from '../Layout'
 import Home from '../../pages/Home'
 import Liked from '../../pages/Liked'
+import Search from '../../pages/Search'
 
 export default function App() {
   const token = true
@@ -14,6 +15,7 @@ export default function App() {
             <Routes>
               <Route path='/home' element={<Home />} />
               <Route path='/liked' element={<Liked />} />
+              <Route path='/search' element={<Search />} />
             </Routes>
           </Layout>
         </BrowserRouter>
