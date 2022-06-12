@@ -35,6 +35,10 @@ const Menu = styled.ul`
     font-size: 2.4rem;
   }
 
+  li:last-child {
+    font-size: 2rem;
+  }
+
   .selected {
     background-color: ${color.main};
     height: 65px;

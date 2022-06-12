@@ -1,11 +1,11 @@
 import { Header, Cart, Title, ProfilePicture, Image } from './styles'
-import { FaShoppingBasket } from 'react-icons/fa'
+import { IoCart } from 'react-icons/io5'
 
 const HeaderComponent = ({ title }) => {
   return (
     <Header>
       <Cart>
-        <FaShoppingBasket className='cart__icon' />
+        <IoCart className='cart__icon' />
       </Cart>
       <Title>{title}</Title>
       <ProfilePicture className='profilePicture'>

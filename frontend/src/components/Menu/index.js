@@ -1,5 +1,6 @@
 import { MdHome } from 'react-icons/md'
-import { FaHeart, FaShoppingBasket, FaSearch } from 'react-icons/fa'
+import { FaHeart, FaSearch } from 'react-icons/fa'
+import { IoCart } from 'react-icons/io5'
 import { Menu } from './styles'
 import { Link, useLocation } from 'react-router-dom'
 
@@ -38,7 +39,7 @@ const MenuComponent = () => {
           title='cart'
         >
           <Link to='/cart'>
-            <FaShoppingBasket />
+            <IoCart />
           </Link>
         </li>
       </Menu>
