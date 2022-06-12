@@ -13,30 +13,42 @@ const Menu = styled.ul`
   list-style: none;
   padding: 5px 40px;
   height: 75px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   li {
-    font-size: 1.8rem;
     display: flex;
     justify-content: center;
     height: 65px;
     width: 65px;
     align-items: flex-start;
     transition: 0.3s;
-    a {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    button {
+      font-size: 1.8rem;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
       color: ${color.soft};
       width: 100%;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
     }
   }
 
-  li:first-child {
+  li:first-child button {
     font-size: 2.4rem;
   }
 
-  li:last-child {
-    font-size: 2rem;
+  li:last-child button {
+    font-size: 2.1rem;
   }
 
   .selected {
@@ -49,7 +61,7 @@ const Menu = styled.ul`
     color: white;
     align-items: center;
     padding-top: 0;
-    a {
+    button {
       color: white;
     }
   }
