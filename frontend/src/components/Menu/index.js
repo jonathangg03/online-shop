@@ -2,30 +2,40 @@ import { MdHome } from 'react-icons/md'
 import { FaHeart, FaSearch } from 'react-icons/fa'
 import { IoCart } from 'react-icons/io5'
 import { Menu } from './styles'
-import { useLocation, useRoutes } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const MenuComponent = () => {
   const location = useLocation()
+  const navigate = useNavigate()
 
   const handleNavigate = (event) => {
     console.log(event)
     let buttonId
     if (event.target.tagName === 'path') {
       const svg = event.target.parentNode
-      const button = svg.target.parentNode
+      const button = svg.parentNode
       buttonId = button.id
     }
     if (event.target.tagName === 'svg') {
-      const button = event.target.parentButton
+      const button = event.target.parentNode
       buttonId = button.id
     }
-    if (event.target.tagName === 'button') {
+    if (event.target.tagName === 'BUTTON') {
       buttonId = event.target.id
     }
 
     switch (buttonId) {
       case 'home':
-        routes.push('/home')
+        navigate('/home')
+        break
+      case 'liked':
+        navigate('/liked')
+        break
+      case 'search':
+        navigate('/search')
+        break
+      case 'cart':
+        navigate('/cart')
         break
     }
   }
@@ -47,8 +57,8 @@ const MenuComponent = () => {
         <li>
           <button
             className={location.pathname === '/liked' ? 'selected' : ''}
-            title='like'
-            id='like'
+            title='liked'
+            id='liked'
             type='button'
             onClick={handleNavigate}
           >
