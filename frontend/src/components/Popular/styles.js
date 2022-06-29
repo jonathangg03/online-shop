@@ -4,17 +4,31 @@ import { color, shadow, radius, font } from '../../styles/styleVariables'
 const Head = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 20px;
   h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: gray;
   }
 
   h5 {
-    font-size: 1.4rem;
     font-weight: 500;
-    color: gray;
+  }
+
+  button {
+    font-size: 1.8rem;
+    color: ${color.main};
+    border: none;
+    background-color: white;
+    box-shadow: ${shadow.main};
+    width: 90px;
+    padding: 15px;
+    border-radius: ${radius.main};
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 `
 

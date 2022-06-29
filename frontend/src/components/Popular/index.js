@@ -1,3 +1,4 @@
+import { HiFilter } from 'react-icons/hi'
 import { Products, Head } from './styles'
 import Tennis from '../../../public/tenis2.png'
 
@@ -5,8 +6,11 @@ const Popular = () => {
   return (
     <section>
       <Head>
-        <h3>Popular</h3>
-        <h5>Ver Todos</h5>
+        <h3>Mostrando: Popular</h3>
+        <button type='button'>
+          <h5>Filtrar</h5>
+          <HiFilter />
+        </button>
       </Head>
       <Products>
         <article>
