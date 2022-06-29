@@ -22,11 +22,11 @@ const Menu = styled.ul`
     height: 65px;
     width: 65px;
     align-items: flex-start;
-    transition: 0.3s;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     button {
+      transition: 0.3s;
       font-size: 1.8rem;
       -webkit-user-select: none;
       -ms-user-select: none;
@@ -40,6 +40,8 @@ const Menu = styled.ul`
       border: none;
       background-color: transparent;
       cursor: pointer;
+      background: none;
+      /* seletion: none; */
     }
   }
 

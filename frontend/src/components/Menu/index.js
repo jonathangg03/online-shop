@@ -9,7 +9,6 @@ const MenuComponent = () => {
   const navigate = useNavigate()
 
   const handleNavigate = (event) => {
-    console.log(event)
     let buttonId
     if (event.target.tagName === 'path') {
       const svg = event.target.parentNode
