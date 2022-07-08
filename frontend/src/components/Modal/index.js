@@ -1,27 +1,72 @@
-import { Container, OptionList, Option } from './styles'
+import { Container, OptionList, OptionContainer, Option } from './styles'
 
-const Modal = () => {
+const Modal = ({ handleOpenModal }) => {
+  const handleChangeCheck = (event) => {
+    handleOpenModal()
+  }
+
   return (
     <Container>
       <OptionList>
-        <legend>Filtrar por:</legend>
-        <Option type='radio' name='filter' value='all' />
-        <label>Ver todos</label>
+        <OptionContainer>
+          <Option
+            type='radio'
+            name='filter'
+            value='all'
+            defaultChecked
+            onChange={handleChangeCheck}
+          />
+          <span>Ver todos</span>
+        </OptionContainer>
+        <OptionContainer>
+          <Option
+            type='radio'
+            name='filter'
+            value='priceMax'
+            onChange={handleChangeCheck}
+          />
+          <span>Precio (Mayor a menor)</span>
+        </OptionContainer>
 
-        <Option type='radio' name='filter' value='priceMax' />
-        <label>Precio (Mayor a menor)</label>
+        <OptionContainer>
+          <Option
+            type='radio'
+            name='filter'
+            value='priceMin'
+            onChange={handleChangeCheck}
+          />
+          <span>Precio (Menor a mayor)</span>
+        </OptionContainer>
 
-        <Option type='radio' name='filter' value='priceMin' />
-        <label>Precio (Menor a mayor)</label>
+        <OptionContainer>
+          <Option
+            type='radio'
+            name='filter'
+            value='popular'
+            onChange={handleChangeCheck}
+          />
+          <span>Popularidad</span>
+        </OptionContainer>
 
-        <Option type='radio' name='filter' value='popular' />
-        <label>Popularidad</label>
+        <OptionContainer>
+          <Option
+            type='radio'
+            name='filter'
+            value='new'
+            onChange={handleChangeCheck}
+          />
+          <span>Nuevo</span>
+        </OptionContainer>
 
-        <Option type='radio' name='filter' value='new' />
-        <label>Nuevo</label>
-
-        <Option type='radio' name='filter' value='name' />
-        <label>Nombre</label>
+        <OptionContainer>
+          <Option
+            type='radio'
+            name='filter'
+            value='name'
+            onChange={handleChangeCheck}
+          />
+          <span>Nombre</span>
+        </OptionContainer>
       </OptionList>
     </Container>
   )

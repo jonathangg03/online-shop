@@ -6,11 +6,12 @@ import Tennis from '../../../public/tenis2.png'
 import Modal from '../Modal'
 
 const Popular = () => {
-  const [openModal, setOpenModal] = useState(true)
+  const [openModal, setOpenModal] = useState(false)
 
   const handleOpenModal = () => {
     setOpenModal((prev) => !prev)
   }
+
   return (
     <section>
       <Head>
@@ -59,8 +60,11 @@ const Popular = () => {
           <h6>₡12000</h6>
         </article>
       </Products>
-      {open &&
-        ReactDOM.createPortal(<Modal />, document.getElementById('modal'))}
+      {openModal &&
+        ReactDOM.createPortal(
+          <Modal handleOpenModal={handleOpenModal} />,
+          document.getElementById('modal')
+        )}
     </section>
   )
 }
