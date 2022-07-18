@@ -10,7 +10,8 @@ const Categories = styled.section`
   margin-bottom: 30px;
 `
 
-const Item = styled.div`
+const Item = styled.button`
+  border: none;
   margin-right: 20px;
   background-color: white;
   height: 100%;
