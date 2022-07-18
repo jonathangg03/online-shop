@@ -6,7 +6,7 @@ const Modal = ({ handleOpenModal }) => {
   }
 
   return (
-    <Container>
+    <Container onClick={handleOpenModal}>
       <OptionList>
         <OptionContainer>
           <Option
