@@ -1,11 +1,11 @@
-import Popular from '../../components/Popular'
+import Products from '../../components/Products'
 import SearchForm from '../../components/SearchForm'
 
 const Search = () => {
   return (
     <>
       <SearchForm />
-      <Popular />
+      <Products />
     </>
   )
 }

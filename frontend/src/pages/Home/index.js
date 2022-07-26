@@ -1,14 +1,14 @@
 import { useContext } from 'react'
 import Context from '../../context/onlineStoreContext'
 import Categories from '../../components/Categories'
-import Popular from '../../components/Popular'
+import Products from '../../components/Products'
 
 const Home = () => {
   const context = useContext(Context)
   return (
     <>
       <Categories />
-      <Popular />
+      <Products />
     </>
   )
 }
