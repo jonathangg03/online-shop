@@ -44,7 +44,7 @@ const MenuComponent = () => {
       <Menu>
         <li>
           <button
-            className={location.pathname === '/home' ? 'selected' : ''}
+            className={location.pathname.includes('home') ? 'selected' : ''}
             title='home'
             id='home'
             type='button'
@@ -55,7 +55,7 @@ const MenuComponent = () => {
         </li>
         <li>
           <button
-            className={location.pathname === '/liked' ? 'selected' : ''}
+            className={location.pathname.includes('liked') ? 'selected' : ''}
             title='liked'
             id='liked'
             type='button'
@@ -66,7 +66,7 @@ const MenuComponent = () => {
         </li>
         <li>
           <button
-            className={location.pathname === '/search' ? 'selected' : ''}
+            className={location.pathname.includes('search') ? 'selected' : ''}
             title='search'
             id='search'
             type='button'
@@ -77,7 +77,7 @@ const MenuComponent = () => {
         </li>
         <li>
           <button
-            className={location.pathname === '/cart' ? 'selected' : ''}
+            className={location.pathname.includes('cart') ? 'selected' : ''}
             title='cart'
             id='cart'
             type='button'

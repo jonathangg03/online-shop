@@ -15,6 +15,7 @@ export default function App() {
           <Layout>
             <Routes>
               <Route path='/home' element={<Home />} />
+              <Route path='/home/:id' element={<Home />} />
               <Route path='/liked' element={<Liked />} />
               <Route path='/search' element={<Search />} />
               <Route path='/cart' element={<Cart />} />
