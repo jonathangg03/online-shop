@@ -2,9 +2,10 @@ import { useContext } from 'react'
 import { Container, OptionList, OptionContainer, Option } from './styles'
 import Context from '../../context/onlineStoreContext'
 import { types } from '../../reducers'
+import { CATEGORIES } from '../../data'
 
 const Modal = () => {
-  const { dispatch } = useContext(Context)
+  const { store, dispatch } = useContext(Context)
 
   const handleChangeCheck = (event) => {
     dispatch({ type: types.CHANGE_CATEGORY, payload: event.target.value })
@@ -26,7 +27,7 @@ const Modal = () => {
             type='radio'
             name='filter'
             value='0'
-            defaultChecked
+            defaultChecked={store.category === CATEGORIES.all}
             onChange={handleChangeCheck}
           />
           <span>Ver todos</span>
@@ -36,6 +37,7 @@ const Modal = () => {
             type='radio'
             name='filter'
             value='1'
+            defaultChecked={store.category === CATEGORIES.priceMax}
             onChange={handleChangeCheck}
           />
           <span>Precio (Mayor a menor)</span>
@@ -45,6 +47,7 @@ const Modal = () => {
             type='radio'
             name='filter'
             value='2'
+            defaultChecked={store.category === CATEGORIES.priceMin}
             onChange={handleChangeCheck}
           />
           <span>Precio (Menor a mayor)</span>
@@ -54,6 +57,7 @@ const Modal = () => {
             type='radio'
             name='filter'
             value='3'
+            defaultChecked={store.category === CATEGORIES.popularity}
             onChange={handleChangeCheck}
           />
           <span>Popularidad</span>
@@ -63,6 +67,7 @@ const Modal = () => {
             type='radio'
             name='filter'
             value='4'
+            defaultChecked={store.category === CATEGORIES.new}
             onChange={handleChangeCheck}
           />
           <span>Nuevo</span>
@@ -73,6 +78,7 @@ const Modal = () => {
             name='filter'
             value='5'
             onChange={handleChangeCheck}
+            checked={store.category === CATEGORIES.name}
           />
           <span>Nombre</span>
         </OptionContainer>

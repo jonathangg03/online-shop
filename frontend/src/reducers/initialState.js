@@ -1,6 +1,6 @@
 const initialState = {
   openModal: false,
-  category: -1
+  category: '0'
 }
 
 export default initialState

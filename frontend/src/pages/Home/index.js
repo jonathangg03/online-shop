@@ -8,7 +8,6 @@ const Home = () => {
   return (
     <>
       <Categories />
-      {console.log(store)}
       <Products />
     </>
   )
