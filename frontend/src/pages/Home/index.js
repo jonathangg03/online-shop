@@ -4,10 +4,11 @@ import Categories from '../../components/Categories'
 import Products from '../../components/Products'
 
 const Home = () => {
-  const context = useContext(Context)
+  const { store } = useContext(Context)
   return (
     <>
       <Categories />
+      {console.log(store)}
       <Products />
     </>
   )

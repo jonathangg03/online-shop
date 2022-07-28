@@ -1,18 +1,31 @@
+import { useContext } from 'react'
 import { Container, OptionList, OptionContainer, Option } from './styles'
+import Context from '../../context/onlineStoreContext'
+import { types } from '../../reducers'
 
-const Modal = ({ handleOpenModal }) => {
+const Modal = () => {
+  const { dispatch } = useContext(Context)
+
   const handleChangeCheck = (event) => {
-    handleOpenModal()
+    dispatch({ type: types.CHANGE_CATEGORY, payload: event.target.value })
+    dispatch({ type: types.CLOSE_MODAL })
+  }
+
+  const handleCloseModal = (event) => {
+    //without this, modal will be closed with every click
+    if (event.target.tagName === 'SECTION') {
+      dispatch({ type: types.CLOSE_MODAL })
+    }
   }
 
   return (
-    <Container onClick={handleOpenModal}>
+    <Container onClick={handleCloseModal}>
       <OptionList>
         <OptionContainer>
           <Option
             type='radio'
             name='filter'
-            value='all'
+            value='0'
             defaultChecked
             onChange={handleChangeCheck}
           />
@@ -22,47 +35,43 @@ const Modal = ({ handleOpenModal }) => {
           <Option
             type='radio'
             name='filter'
-            value='priceMax'
+            value='1'
             onChange={handleChangeCheck}
           />
           <span>Precio (Mayor a menor)</span>
         </OptionContainer>
-
         <OptionContainer>
           <Option
             type='radio'
             name='filter'
-            value='priceMin'
+            value='2'
             onChange={handleChangeCheck}
           />
           <span>Precio (Menor a mayor)</span>
         </OptionContainer>
-
         <OptionContainer>
           <Option
             type='radio'
             name='filter'
-            value='popular'
+            value='3'
             onChange={handleChangeCheck}
           />
           <span>Popularidad</span>
         </OptionContainer>
-
         <OptionContainer>
           <Option
             type='radio'
             name='filter'
-            value='new'
+            value='4'
             onChange={handleChangeCheck}
           />
           <span>Nuevo</span>
         </OptionContainer>
-
         <OptionContainer>
           <Option
             type='radio'
             name='filter'
-            value='name'
+            value='5'
             onChange={handleChangeCheck}
           />
           <span>Nombre</span>
