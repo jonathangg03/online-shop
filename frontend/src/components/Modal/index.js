@@ -27,7 +27,7 @@ const Modal = () => {
             type='radio'
             name='filter'
             value='0'
-            defaultChecked={store.category === CATEGORIES.all}
+            checked={store.category === CATEGORIES.Todos}
             onChange={handleChangeCheck}
           />
           <span>Ver todos</span>
@@ -37,7 +37,7 @@ const Modal = () => {
             type='radio'
             name='filter'
             value='1'
-            defaultChecked={store.category === CATEGORIES.priceMax}
+            checked={store.category === CATEGORIES['Precio (mayor a menor)']}
             onChange={handleChangeCheck}
           />
           <span>Precio (Mayor a menor)</span>
@@ -47,7 +47,7 @@ const Modal = () => {
             type='radio'
             name='filter'
             value='2'
-            defaultChecked={store.category === CATEGORIES.priceMin}
+            checked={store.category === CATEGORIES['Precio (menor a mayor)']}
             onChange={handleChangeCheck}
           />
           <span>Precio (Menor a mayor)</span>
@@ -57,7 +57,7 @@ const Modal = () => {
             type='radio'
             name='filter'
             value='3'
-            defaultChecked={store.category === CATEGORIES.popularity}
+            checked={store.category === CATEGORIES.Popularidad}
             onChange={handleChangeCheck}
           />
           <span>Popularidad</span>
@@ -67,7 +67,7 @@ const Modal = () => {
             type='radio'
             name='filter'
             value='4'
-            defaultChecked={store.category === CATEGORIES.new}
+            checked={store.category === CATEGORIES.Nuevo}
             onChange={handleChangeCheck}
           />
           <span>Nuevo</span>
@@ -78,7 +78,7 @@ const Modal = () => {
             name='filter'
             value='5'
             onChange={handleChangeCheck}
-            checked={store.category === CATEGORIES.name}
+            checked={store.category === CATEGORIES.Nombre}
           />
           <span>Nombre</span>
         </OptionContainer>

@@ -3,7 +3,7 @@ const font = {
 }
 
 const color = {
-  main: '#ff7b7d',
+  main: '#70C7C5',
   soft: '#dbdbdb',
   hard: '#4d4d4d'
 }
