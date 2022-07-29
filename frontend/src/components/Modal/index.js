@@ -30,7 +30,7 @@ const Modal = () => {
             checked={store.category === CATEGORIES.Todos}
             onChange={handleChangeCheck}
           />
-          <span>Ver todos</span>
+          <span>Todos</span>
         </OptionContainer>
         <OptionContainer>
           <Option

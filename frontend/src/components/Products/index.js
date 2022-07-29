@@ -14,16 +14,17 @@ const Popular = () => {
   const [categoryName, setCategoryName] = useState('Todos')
 
   useEffect(() => {
-    const searchedValue = store.category
-    const indexFinded = Object.values(CATEGORIES).find((category, index) => {
-      if (category === searchedValue) {
-        return index
-      }
-    })
-    console.log(indexFinded)
-    const names = Object.keys(CATEGORIES)
-    setCategoryName(names[indexFinded])
-  }, [])
+    if(store.category > -1) {
+      const searchedValue = store.category
+      const categoriesValues = Object.values(CATEGORIES)
+      const categoryValueIndex = categoriesValues.indexOf(searchedValue)
+      const categoriesNames = Object.keys(CATEGORIES)
+      const categoryName = categoriesNames[categoryValueIndex]
+      console.log(categoryName)
+      
+      setCategoryName(categoryName)
+    }
+  }, [store.category])
 
   return (
     <section>
