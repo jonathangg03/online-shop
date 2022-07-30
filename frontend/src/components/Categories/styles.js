@@ -8,6 +8,22 @@ const Categories = styled.section`
   overflow-x: auto;
   padding-bottom: 11px;
   margin-bottom: 30px;
+
+  &::-webkit-scrollbar {
+    height: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: ${color.main};
+  }
 `
 
 const Item = styled.button`

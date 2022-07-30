@@ -14,14 +14,14 @@ const Popular = () => {
   const [categoryName, setCategoryName] = useState('Todos')
 
   useEffect(() => {
-    if(store.category > -1) {
+    if (store.category > -1) {
       const searchedValue = store.category
       const categoriesValues = Object.values(CATEGORIES)
       const categoryValueIndex = categoriesValues.indexOf(searchedValue)
       const categoriesNames = Object.keys(CATEGORIES)
       const categoryName = categoriesNames[categoryValueIndex]
       console.log(categoryName)
-      
+
       setCategoryName(categoryName)
     }
   }, [store.category])
@@ -29,7 +29,7 @@ const Popular = () => {
   return (
     <section>
       <Head>
-        <h3>Mostrando: {categoryName}</h3>
+        <h3>Filtrando: {categoryName}</h3>
         <button
           type='button'
           onClick={() => dispatch({ type: types.OPEN_MODAL })}
