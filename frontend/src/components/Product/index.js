@@ -8,13 +8,10 @@ const Product = ({ images, description, name, price, colors }) => {
     setColorSelected(parseInt(event.target.id))
   }
 
-  /*
-   * Next step: Review the product image to show the correct one
-   */
-
   return (
     <ProductContainer>
-      <img src={images.main} alt={description.small} />
+      {console.log(colorSelected)}
+      <img src={images.colorVariations.find(colorVariation => colorVariation.color === colorSelected).image} alt={description.small} />
       <h5>{name}</h5>
       <p>{description.small}</p>
       <h6>₡{price}</h6>

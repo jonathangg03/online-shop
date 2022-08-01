@@ -1,3 +1,8 @@
+/* 
+  Next Step: Improve the data organization: General data has to be inside the global object of a product, then, we have to create
+  an element that contains every color variation. Inside of that color, it has to be the specific information like ID or images.
+*/
+
 const COLOR_TABLE = {
   white: 0,
   black: 1,
@@ -40,14 +45,29 @@ const products = [
     },
     price: '12000',
     category: 1,
-    colors: [9, 3, 5],
+    colors: [9, 8, 5],
     created_at: 1658108671295,
     images: {
-      main: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/5149f8e1-49a0-45f9-b9fc-ddd8f7a38ef7/air-max-97-womens-shoes-Fr6rM4.png',
       show: [
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6101456b-d7e2-4db3-bf8f-8eb575b1334d/air-max-97-womens-shoes-Fr6rM4.png',
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/78c399bc-6b51-4980-a617-1ccd029d30d5/air-max-97-womens-shoes-Fr6rM4.png',
         'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/fb110688-c308-41e4-9384-dc6ae6c64278/air-max-97-womens-shoes-Fr6rM4.png'
+      ],
+      colorVariations: [
+        {
+          color: 9,
+          image: 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/134bd4da-1621-40fb-8ce9-d66dc12837c0/air-max-97-womens-shoes-Fr6rM4.png'
+        },
+        {
+          color: 8,
+          image: 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/249438dd-c851-4570-bb2d-566d8ccbd1c4/air-max-97-womens-shoes-Fr6rM4.png'
+            },
+        {
+          
+          color: 5,
+          image: 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9543e003-b0a5-46af-848f-da3b3046cb61/air-max-97-womens-shoes-Fr6rM4.png'
+
+        },
       ]
     },
     sizes: [5, 5.5, 6, 6.5, 7, 7.5],
