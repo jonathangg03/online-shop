@@ -97,11 +97,19 @@ const Product = styled.li`
 
 const ColorButton = styled.button`
   border: 1px solid ${color.soft};
-  width: 27px;
-  height: 27px;
-  border-radius: 88px;
-  padding: 1px;
+  width: 30px;
+  height: 30px;
+  border-radius: 99px;
+  border: 4px solid white;
+  outline: 2px solid white;
   background-color: ${(props) => selectColor(props)};
+  transition: 0.2s;
+
+  ${(props) =>
+    props.selected &&
+    `
+    outline-color: ${color.main};
+  `}
 `
 
 export { Product, ColorButton }

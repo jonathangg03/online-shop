@@ -1,6 +1,17 @@
+import { useState } from 'react'
 import { Product as ProductContainer, ColorButton } from './styles'
 
 const Product = ({ images, description, name, price, colors }) => {
+  const [colorSelected, setColorSelected] = useState(colors[0])
+
+  const handleSelectColor = (event) => {
+    setColorSelected(parseInt(event.target.id))
+  }
+
+  /*
+   * Next step: Review the product image to show the correct one
+   */
+
   return (
     <ProductContainer>
       <img src={images.main} alt={description.small} />
@@ -13,7 +24,9 @@ const Product = ({ images, description, name, price, colors }) => {
           return (
             <ColorButton
               key={color}
-              className='color'
+              onClick={handleSelectColor}
+              selected={color === colorSelected}
+              id={color}
               color={color}
             ></ColorButton>
           )
