@@ -1,5 +1,42 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { color, shadow, radius } from '../../styles/styleVariables'
+
+const selectColor = (props) => {
+  let color
+  switch (props.color) {
+    case 0:
+      color = color.main
+      break
+    case 1:
+      color = 'black'
+      break
+    case 2:
+      color = 'blue'
+      break
+    case 3:
+      color = 'green'
+      break
+    case 4:
+      color = 'yellow'
+      break
+    case 5:
+      color = 'pink'
+      break
+    case 6:
+      color = 'purple'
+      break
+    case 7:
+      color = 'gray'
+      break
+    case 8:
+      color = 'lightblue'
+      break
+    case 9:
+      color = 'red'
+      break
+  }
+  return color
+}
 
 const Product = styled.li`
   display: flex;
@@ -50,6 +87,21 @@ const Product = styled.li`
     top: 10px;
     left: 8px;
   }
+
+  .colors {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+  }
 `
 
-export { Product }
+const ColorButton = styled.button`
+  border: 1px solid ${color.soft};
+  width: 27px;
+  height: 27px;
+  border-radius: 88px;
+  padding: 1px;
+  background-color: ${(props) => selectColor(props)};
+`
+
+export { Product, ColorButton }
