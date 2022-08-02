@@ -7,4 +7,10 @@ const FILTERS = {
   Nombre: 5
 }
 
-export { FILTERS }
+const CATEGORIES = {
+  calzado: 0,
+  relojes: 1,
+  ropa: 2
+}
+
+export { FILTERS, CATEGORIES }
