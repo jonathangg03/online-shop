@@ -9,7 +9,7 @@ import Product from '../Product'
 import { types } from '../../reducers'
 import { CATEGORIES } from '../../data'
 
-const Popular = () => {
+const ProductsComponent = () => {
   const { store, dispatch } = useContext(Context)
   const [categoryName, setCategoryName] = useState('Todos')
 
@@ -20,8 +20,6 @@ const Popular = () => {
       const categoryValueIndex = categoriesValues.indexOf(searchedValue)
       const categoriesNames = Object.keys(CATEGORIES)
       const categoryName = categoriesNames[categoryValueIndex]
-      console.log(categoryName)
-
       setCategoryName(categoryName)
     }
   }, [store.category])
@@ -40,7 +38,7 @@ const Popular = () => {
       </Head>
       <Products>
         {products.map((product) => {
-          return <Product key={product.sku} {...product} />
+          return <Product key={product.variations[0].sku} {...product} />
         })}
       </Products>
       {store.openModal &&
@@ -49,4 +47,4 @@ const Popular = () => {
   )
 }
 
-export default Popular
+export default ProductsComponent

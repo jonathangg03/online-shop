@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Product as ProductContainer, ColorButton } from './styles'
 
-const Product = ({ images, description, name, price, colors }) => {
+const Product = ({ images, description, name, price, colors, variations }) => {
   const [colorSelected, setColorSelected] = useState(colors[0])
 
   const handleSelectColor = (event) => {
@@ -10,8 +10,13 @@ const Product = ({ images, description, name, price, colors }) => {
 
   return (
     <ProductContainer>
-      {console.log(colorSelected)}
-      <img src={images.colorVariations.find(colorVariation => colorVariation.color === colorSelected).image} alt={description.small} />
+      <img
+        src={
+          variations.find((variation) => variation.color === colorSelected)
+            .images.presentation
+        }
+        alt={description.small}
+      />
       <h5>{name}</h5>
       <p>{description.small}</p>
       <h6>₡{price}</h6>
