@@ -1,8 +1,3 @@
-/* 
-  Next Step: Improve the data organization: General data has to be inside the global object of a product, then, we have to create
-  an element that contains every color variation. Inside of that color, it has to be the specific information like ID or images.
-*/
-
 const COLOR_TABLE = {
   white: 0,
   black: 1,
@@ -47,55 +42,49 @@ const products = [
     category: 1,
     colors: [9, 8, 5],
     created_at: 1658108671295,
-    images: {
-      show: [
-        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6101456b-d7e2-4db3-bf8f-8eb575b1334d/air-max-97-womens-shoes-Fr6rM4.png',
-        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/78c399bc-6b51-4980-a617-1ccd029d30d5/air-max-97-womens-shoes-Fr6rM4.png',
-        'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/fb110688-c308-41e4-9384-dc6ae6c64278/air-max-97-womens-shoes-Fr6rM4.png'
-      ],
-      colorVariations: [
-        {
-          color: 9,
-          image: 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/134bd4da-1621-40fb-8ce9-d66dc12837c0/air-max-97-womens-shoes-Fr6rM4.png'
-        },
-        {
-          color: 8,
-          image: 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/249438dd-c851-4570-bb2d-566d8ccbd1c4/air-max-97-womens-shoes-Fr6rM4.png'
-            },
-        {
-          
-          color: 5,
-          image: 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9543e003-b0a5-46af-848f-da3b3046cb61/air-max-97-womens-shoes-Fr6rM4.png'
-
-        },
-      ]
-    },
-    sizes: [5, 5.5, 6, 6.5, 7, 7.5],
     gender: [0],
-    sku: 1,
-    'sub-products': [
+    variations: [
       {
-        sku: 2,
+        color: 9,
         images: {
-          main: 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/101331ac-72fe-4832-9302-39ba74bb39b0/air-max-97-womens-shoes-Fr6rM4.png',
-          show: [
-            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/101331ac-72fe-4832-9302-39ba74bb39b0/air-max-97-womens-shoes-Fr6rM4.png',
-            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/349dc069-d459-4766-b6c1-c39ecafb6e13/air-max-97-womens-shoes-Fr6rM4.png',
-            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/429ab3e0-8a2d-48d0-ba25-f0026511b568/air-max-97-womens-shoes-Fr6rM4.png'
+          presentation:
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0ed77dcc-5293-46ac-9032-b785bd182af5/air-max-97-womens-shoes-Fr6rM4.png',
+          collection: [
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0ed77dcc-5293-46ac-9032-b785bd182af5/air-max-97-womens-shoes-Fr6rM4.png',
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2d51118b-e06a-4e2b-8282-a8ea6ea7f9ad/air-max-97-womens-shoes-Fr6rM4.png',
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/3f4a5845-f617-47cf-837f-0c8ba55e4acc/air-max-97-womens-shoes-Fr6rM4.png'
           ]
         },
+        sku: 1,
+        sizes: [5, 5.5, 6, 6.5, 7, 7.5]
+      },
+      {
+        color: 8,
+        images: {
+          presentation:
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/249438dd-c851-4570-bb2d-566d8ccbd1c4/air-max-97-womens-shoes-Fr6rM4.png',
+          collection: [
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/249438dd-c851-4570-bb2d-566d8ccbd1c4/air-max-97-womens-shoes-Fr6rM4.png',
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/8dbfbd50-4e4e-4e45-9e5f-000a270cbde0/air-max-97-womens-shoes-Fr6rM4.png',
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/c716ef8c-2aa2-4c4b-bd6d-5183517701d6/air-max-97-womens-shoes-Fr6rM4.png'
+          ]
+        },
+        sku: 2,
         sizes: [5, 5.5, 6, 6.5, 7]
       },
       {
-        sku: 3,
+        color: 5,
         images: {
-          main: 'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/05dfb08e-c9b7-4cb3-9f49-9e740f173e06/air-max-97-se-womens-shoes-Fr6rM4.png',
-          show: [
-            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/05dfb08e-c9b7-4cb3-9f49-9e740f173e06/air-max-97-se-womens-shoes-Fr6rM4.png',
-            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/10a0f07c-835c-478f-a121-8b9c93cd7008/air-max-97-se-womens-shoes-Fr6rM4.png',
-            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2082d6d7-145b-4cd2-894e-f54f2f3a50de/air-max-97-se-womens-shoes-Fr6rM4.png'
+          presentation:
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9543e003-b0a5-46af-848f-da3b3046cb61/air-max-97-womens-shoes-Fr6rM4.png',
+          collection: [
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9543e003-b0a5-46af-848f-da3b3046cb61/air-max-97-womens-shoes-Fr6rM4.png',
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/429ab3e0-8a2d-48d0-ba25-f0026511b568/air-max-97-womens-shoes-Fr6rM4.png',
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/429ab3e0-8a2d-48d0-ba25-f0026511b568/air-max-97-womens-shoes-Fr6rM4.png',
+            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/9dffed5f-f507-46ba-a176-629d554501a2/air-max-97-womens-shoes-Fr6rM4.png'
           ]
         },
+        sku: 3,
         sizes: [5, 5.5, 6.5, 7, 7.5]
       }
     ]
