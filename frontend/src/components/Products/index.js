@@ -7,7 +7,7 @@ import Context from '../../context/onlineStoreContext'
 import { products } from '../../fakeDB/products'
 import Product from '../Product'
 import { types } from '../../reducers'
-import { CATEGORIES } from '../../data'
+import { FILTERS } from '../../data'
 
 const ProductsComponent = () => {
   const { store, dispatch } = useContext(Context)
@@ -16,9 +16,9 @@ const ProductsComponent = () => {
   useEffect(() => {
     if (store.category > -1) {
       const searchedValue = store.category
-      const categoriesValues = Object.values(CATEGORIES)
+      const categoriesValues = Object.values(FILTERS)
       const categoryValueIndex = categoriesValues.indexOf(searchedValue)
-      const categoriesNames = Object.keys(CATEGORIES)
+      const categoriesNames = Object.keys(FILTERS)
       const categoryName = categoriesNames[categoryValueIndex]
       setCategoryName(categoryName)
     }

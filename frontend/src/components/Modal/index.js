@@ -2,13 +2,16 @@ import { useContext } from 'react'
 import { Container, OptionList, OptionContainer, Option } from './styles'
 import Context from '../../context/onlineStoreContext'
 import { types } from '../../reducers'
-import { CATEGORIES } from '../../data'
+import { FILTERS } from '../../data'
 
 const Modal = () => {
   const { store, dispatch } = useContext(Context)
 
   const handleChangeCheck = (event) => {
-    dispatch({ type: types.CHANGE_CATEGORY, payload: event.target.value })
+    dispatch({
+      type: types.CHANGE_CATEGORY,
+      payload: parseInt(event.target.value)
+    })
     dispatch({ type: types.CLOSE_MODAL })
   }
 
@@ -26,8 +29,8 @@ const Modal = () => {
           <Option
             type='radio'
             name='filter'
-            value='0'
-            checked={store.category === CATEGORIES.Todos}
+            value={0}
+            checked={store.category === FILTERS.Todos}
             onChange={handleChangeCheck}
           />
           <span>Todos</span>
@@ -36,8 +39,8 @@ const Modal = () => {
           <Option
             type='radio'
             name='filter'
-            value='1'
-            checked={store.category === CATEGORIES['Precio (mayor a menor)']}
+            value={1}
+            checked={store.category === FILTERS['Precio (mayor a menor)']}
             onChange={handleChangeCheck}
           />
           <span>Precio (Mayor a menor)</span>
@@ -46,8 +49,8 @@ const Modal = () => {
           <Option
             type='radio'
             name='filter'
-            value='2'
-            checked={store.category === CATEGORIES['Precio (menor a mayor)']}
+            value={2}
+            checked={store.category === FILTERS['Precio (menor a mayor)']}
             onChange={handleChangeCheck}
           />
           <span>Precio (Menor a mayor)</span>
@@ -56,8 +59,8 @@ const Modal = () => {
           <Option
             type='radio'
             name='filter'
-            value='3'
-            checked={store.category === CATEGORIES.Popularidad}
+            value={3}
+            checked={store.category === FILTERS.Popularidad}
             onChange={handleChangeCheck}
           />
           <span>Popularidad</span>
@@ -66,8 +69,8 @@ const Modal = () => {
           <Option
             type='radio'
             name='filter'
-            value='4'
-            checked={store.category === CATEGORIES.Nuevo}
+            value={4}
+            checked={store.category === FILTERS.Nuevo}
             onChange={handleChangeCheck}
           />
           <span>Nuevo</span>
@@ -76,9 +79,9 @@ const Modal = () => {
           <Option
             type='radio'
             name='filter'
-            value='5'
+            value={5}
             onChange={handleChangeCheck}
-            checked={store.category === CATEGORIES.Nombre}
+            checked={store.category === FILTERS.Nombre}
           />
           <span>Nombre</span>
         </OptionContainer>
