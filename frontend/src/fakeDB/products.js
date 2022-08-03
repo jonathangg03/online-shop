@@ -21,7 +21,7 @@ const products = [
     name: 'Nike Air Max 97',
     description: {
       small: 'Women´s shoes',
-      big: 'These streamlined kicks, first introduced in 1997, were inspired by water ripple lines. The sleek design looks fast and the heel-to-toe Max Air unit puts a little extra bounce in your stride.'
+      long: 'These streamlined kicks, first introduced in 1997, were inspired by water ripple lines. The sleek design looks fast and the heel-to-toe Max Air unit puts a little extra bounce in your stride.'
     },
     price: '12000',
     category: 1,
@@ -66,7 +66,6 @@ const products = [
           collection: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9543e003-b0a5-46af-848f-da3b3046cb61/air-max-97-womens-shoes-Fr6rM4.png',
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/429ab3e0-8a2d-48d0-ba25-f0026511b568/air-max-97-womens-shoes-Fr6rM4.png',
-            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/429ab3e0-8a2d-48d0-ba25-f0026511b568/air-max-97-womens-shoes-Fr6rM4.png',
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/9dffed5f-f507-46ba-a176-629d554501a2/air-max-97-womens-shoes-Fr6rM4.png'
           ]
         },
@@ -79,7 +78,7 @@ const products = [
     name: 'Reloj',
     description: {
       small: 'Women´s shoes',
-      big: 'These streamlined kicks, first introduced in 1997, were inspired by water ripple lines. The sleek design looks fast and the heel-to-toe Max Air unit puts a little extra bounce in your stride.'
+      long: 'These streamlined kicks, first introduced in 1997, were inspired by water ripple lines. The sleek design looks fast and the heel-to-toe Max Air unit puts a little extra bounce in your stride.'
     },
     price: '12000',
     category: 1,
@@ -137,7 +136,7 @@ const products = [
     name: 'Camisa',
     description: {
       small: 'Women´s shoes',
-      big: 'These streamlined kicks, first introduced in 1997, were inspired by water ripple lines. The sleek design looks fast and the heel-to-toe Max Air unit puts a little extra bounce in your stride.'
+      long: 'These streamlined kicks, first introduced in 1997, were inspired by water ripple lines. The sleek design looks fast and the heel-to-toe Max Air unit puts a little extra bounce in your stride.'
     },
     price: '12000',
     category: 1,
@@ -182,7 +181,6 @@ const products = [
           collection: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9543e003-b0a5-46af-848f-da3b3046cb61/air-max-97-womens-shoes-Fr6rM4.png',
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/429ab3e0-8a2d-48d0-ba25-f0026511b568/air-max-97-womens-shoes-Fr6rM4.png',
-            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/429ab3e0-8a2d-48d0-ba25-f0026511b568/air-max-97-womens-shoes-Fr6rM4.png',
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/9dffed5f-f507-46ba-a176-629d554501a2/air-max-97-womens-shoes-Fr6rM4.png'
           ]
         },
@@ -195,7 +193,7 @@ const products = [
     name: 'Reloj',
     description: {
       small: 'Women´s shoes',
-      big: 'These streamlined kicks, first introduced in 1997, were inspired by water ripple lines. The sleek design looks fast and the heel-to-toe Max Air unit puts a little extra bounce in your stride.'
+      long: 'These streamlined kicks, first introduced in 1997, were inspired by water ripple lines. The sleek design looks fast and the heel-to-toe Max Air unit puts a little extra bounce in your stride.'
     },
     price: '12000',
     category: 1,
@@ -239,7 +237,6 @@ const products = [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9543e003-b0a5-46af-848f-da3b3046cb61/air-max-97-womens-shoes-Fr6rM4.png',
           collection: [
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/9543e003-b0a5-46af-848f-da3b3046cb61/air-max-97-womens-shoes-Fr6rM4.png',
-            'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/429ab3e0-8a2d-48d0-ba25-f0026511b568/air-max-97-womens-shoes-Fr6rM4.png',
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/429ab3e0-8a2d-48d0-ba25-f0026511b568/air-max-97-womens-shoes-Fr6rM4.png',
             'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/9dffed5f-f507-46ba-a176-629d554501a2/air-max-97-womens-shoes-Fr6rM4.png'
           ]

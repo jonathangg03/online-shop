@@ -11,7 +11,7 @@ const Product = ({ description, name, price, colors, variations }) => {
 
   return (
     <ProductContainer>
-      <Link to={`/product/${variations[0].sku}`}>
+      <Link to={`/search/product/${variations[0].sku}`}>
         <img
           src={
             variations.find((variation) => variation.color === colorSelected)

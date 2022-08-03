@@ -4,6 +4,7 @@ import Home from '../../pages/Home'
 import Liked from '../../pages/Liked'
 import Search from '../../pages/Search'
 import Cart from '../../pages/Cart'
+import Product from '../../pages/Product'
 
 export default function App() {
   const token = true
@@ -19,6 +20,7 @@ export default function App() {
               <Route path='/liked' element={<Liked />} />
               <Route path='/search' element={<Search />} />
               <Route path='/cart' element={<Cart />} />
+              <Route path='/search/product/:id' element={<Product />} />
             </Routes>
           </Layout>
         </BrowserRouter>
