@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { products } from '../../fakeDB/products'
+import { IoCart } from 'react-icons/io5'
+import {AiOutlineHeart, AiFillHeart} from 'react-icons/ai'
 import {
   Images,
   MainImage,
@@ -7,7 +9,10 @@ import {
   ImageOption,
   Title,
   Description,
-  Price
+  Price,
+  Buttons,
+  Like,
+  Chart
 } from './styles'
 
 const mockProduct = products[0]
@@ -43,6 +48,13 @@ const Product = () => {
       <Title>{mockProduct.name}</Title>
       <Description>{mockProduct.description.long}</Description>
       <Price>₡{mockProduct.price}</Price>
+      <Buttons>
+        <Like><AiOutlineHeart/></Like>
+        <Chart>
+          <span>Agregar al carrito</span>
+          <IoCart />
+          </Chart>
+      </Buttons>
     </>
   )
 }
