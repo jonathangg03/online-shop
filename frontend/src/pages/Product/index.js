@@ -1,19 +1,7 @@
-import { useState } from 'react'
 import { products } from '../../fakeDB/products'
-import { IoCart } from 'react-icons/io5'
-import {AiOutlineHeart, AiFillHeart} from 'react-icons/ai'
-import {
-  Images,
-  MainImage,
-  ImageMenu,
-  ImageOption,
-  Title,
-  Description,
-  Price,
-  Buttons,
-  Like,
-  Chart
-} from './styles'
+import ProductDetails from '../../components/ProductDetails'
+import ProductButtons from '../../components/ProductButtons'
+import ProductImages from '../../components/ProductImages'
 
 const mockProduct = products[0]
 const variations = mockProduct.variations
@@ -25,36 +13,12 @@ variations.map((variation) => {
 })
 
 const Product = () => {
-  const [mainImage, setMainImage] = useState(
-    mockProduct.variations[0].images.collection[0]
-  )
+
   return (
     <>
-      <Images>
-        <MainImage>
-          <img src={mainImage} />
-        </MainImage>
-        <ImageMenu>
-          {imagesToShow.map((imageUrl) => (
-            <ImageOption
-              src={imageUrl}
-              key={imageUrl}
-              selected={imageUrl === mainImage}
-              onClick={() => setMainImage(imageUrl)}
-            />
-          ))}
-        </ImageMenu>
-      </Images>
-      <Title>{mockProduct.name}</Title>
-      <Description>{mockProduct.description.long}</Description>
-      <Price>₡{mockProduct.price}</Price>
-      <Buttons>
-        <Like><AiOutlineHeart/></Like>
-        <Chart>
-          <span>Agregar al carrito</span>
-          <IoCart />
-          </Chart>
-      </Buttons>
+      <ProductImages product={mockProduct} imageCollection={imagesToShow} />
+      <ProductDetails name={mockProduct.name} description={mockProduct.description.long} price={mockProduct.price} />
+      <ProductButtons />
     </>
   )
 }
