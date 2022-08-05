@@ -1,7 +1,10 @@
 const types = {
   OPEN_MODAL: 'open-modal',
   CLOSE_MODAL: 'close-modal',
-  CHANGE_CATEGORY: 'change-category'
+  CHANGE_CATEGORY: 'change-category',
+  SET_SEARCH: 'set-search',
+  SET_PRODUCTS: 'set-products',
+
 }
 
 const reducer = (state, actions) => {
@@ -20,6 +23,16 @@ const reducer = (state, actions) => {
       return {
         ...state,
         category: actions.payload
+      }
+    case types.SET_SEARCH:
+      return {
+        ...state,
+        search: actions.payload
+      }
+    case types.SET_PRODUCTS:
+      return {
+        ...state,
+        products: actions.payload
       }
     default:
       return state
