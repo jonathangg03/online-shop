@@ -9,7 +9,7 @@ import Product from '../Product'
 import { types } from '../../reducers'
 import { FILTERS } from '../../data'
 
-const ProductsComponent = () => {
+const ProductsComponent = ({ products }) => {
   const { store, dispatch } = useContext(Context)
   const [categoryName, setCategoryName] = useState('Todos')
 

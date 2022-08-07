@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Categories />
-      <Products />
+      <Products products={store.products} />
     </>
   )
 }

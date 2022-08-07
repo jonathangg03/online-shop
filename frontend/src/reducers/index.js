@@ -3,8 +3,7 @@ const types = {
   CLOSE_MODAL: 'close-modal',
   CHANGE_CATEGORY: 'change-category',
   SET_SEARCH: 'set-search',
-  SET_PRODUCTS: 'set-products',
-
+  SET_PRODUCTS: 'set-products'
 }
 
 const reducer = (state, actions) => {
@@ -32,7 +31,7 @@ const reducer = (state, actions) => {
     case types.SET_PRODUCTS:
       return {
         ...state,
-        products: actions.payload
+        searchedProducts: actions.payload
       }
     default:
       return state
