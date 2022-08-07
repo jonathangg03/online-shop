@@ -1,13 +1,12 @@
 import { useContext, useEffect, useState } from 'react'
-import ReactDOM from 'react-dom'
 import { HiFilter } from 'react-icons/hi'
 import { Products, Head } from './styles'
-import Modal from '../Modal'
+import Modal from '../ModalContainer'
 import Context from '../../context/onlineStoreContext'
-import { products } from '../../fakeDB/products'
 import Product from '../Product'
 import { types } from '../../reducers'
 import { FILTERS } from '../../data'
+import FilterModal from '../FilterModal'
 
 const ProductsComponent = ({ products }) => {
   const { store, dispatch } = useContext(Context)
@@ -41,8 +40,9 @@ const ProductsComponent = ({ products }) => {
           return <Product key={product.variations[0].sku} {...product} />
         })}
       </Products>
-      {store.openModal &&
-        ReactDOM.createPortal(<Modal />, document.getElementById('modal'))}
+      <Modal>
+        <FilterModal />
+      </Modal>
     </section>
   )
 }

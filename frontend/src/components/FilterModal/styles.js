@@ -1,18 +1,6 @@
 import styled from 'styled-components'
 import { color, radius } from '../../styles/styleVariables'
 
-const Container = styled.section`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000000d6;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-`
-
 const OptionList = styled.fieldset`
   background-color: white;
   border: none;
@@ -54,4 +42,4 @@ const Option = styled.input`
   }
 `
 
-export { Container, OptionList, OptionContainer, Option }
+export { OptionList, OptionContainer, Option }

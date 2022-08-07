@@ -31,6 +31,7 @@ const products = [
     category: 0,
     variations: [
       {
+        stock: 3,
         color: 9,
         images: {
           presentation:
@@ -45,6 +46,7 @@ const products = [
         sizes: [5, 5.5, 6, 6.5, 7, 7.5]
       },
       {
+        stock: 6,
         color: 8,
         images: {
           presentation:
@@ -59,6 +61,7 @@ const products = [
         sizes: [5, 5.5, 6, 6.5, 7]
       },
       {
+        stock: 2,
         color: 5,
         images: {
           presentation:
@@ -88,6 +91,7 @@ const products = [
     category: 0,
     variations: [
       {
+        stock: 3,
         color: 9,
         images: {
           presentation:
@@ -102,6 +106,7 @@ const products = [
         sizes: [5, 5.5, 6, 6.5, 7, 7.5]
       },
       {
+        stock: 2,
         color: 8,
         images: {
           presentation:
@@ -116,6 +121,7 @@ const products = [
         sizes: [5, 5.5, 6, 6.5, 7]
       },
       {
+        stock: 5,
         color: 5,
         images: {
           presentation:
@@ -146,6 +152,7 @@ const products = [
     category: 0,
     variations: [
       {
+        stock: 6,
         color: 9,
         images: {
           presentation:
@@ -160,6 +167,7 @@ const products = [
         sizes: [5, 5.5, 6, 6.5, 7, 7.5]
       },
       {
+        stock: 4,
         color: 8,
         images: {
           presentation:
@@ -174,6 +182,7 @@ const products = [
         sizes: [5, 5.5, 6, 6.5, 7]
       },
       {
+        stock: 1,
         color: 5,
         images: {
           presentation:
@@ -203,6 +212,7 @@ const products = [
     category: 0,
     variations: [
       {
+        stock: 7,
         color: 9,
         images: {
           presentation:
@@ -217,6 +227,7 @@ const products = [
         sizes: [5, 5.5, 6, 6.5, 7, 7.5]
       },
       {
+        stock: 3,
         color: 8,
         images: {
           presentation:
@@ -231,6 +242,7 @@ const products = [
         sizes: [5, 5.5, 6, 6.5, 7]
       },
       {
+        stock: 2,
         color: 5,
         images: {
           presentation:
