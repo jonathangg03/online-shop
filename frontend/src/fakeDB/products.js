@@ -23,7 +23,7 @@ const products = [
       small: 'Women´s shoes',
       long: 'These streamlined kicks, first introduced in 1997, were inspired by water ripple lines. The sleek design looks fast and the heel-to-toe Max Air unit puts a little extra bounce in your stride.'
     },
-    price: '12000',
+    price: 100000,
     category: 1,
     colors: [9, 8, 5],
     created_at: 1658108671295,
@@ -80,7 +80,7 @@ const products = [
       small: 'Women´s shoes',
       long: 'These streamlined kicks, first introduced in 1997, were inspired by water ripple lines. The sleek design looks fast and the heel-to-toe Max Air unit puts a little extra bounce in your stride.'
     },
-    price: '12000',
+    price: 5000,
     category: 1,
     colors: [9, 8, 5],
     created_at: 1659481639023,
@@ -138,7 +138,7 @@ const products = [
       small: 'Women´s shoes',
       long: 'These streamlined kicks, first introduced in 1997, were inspired by water ripple lines. The sleek design looks fast and the heel-to-toe Max Air unit puts a little extra bounce in your stride.'
     },
-    price: '12000',
+    price: 12000,
     category: 1,
     colors: [9, 8, 5],
     created_at: 1659481778261,
@@ -195,7 +195,7 @@ const products = [
       small: 'Women´s shoes',
       long: 'These streamlined kicks, first introduced in 1997, were inspired by water ripple lines. The sleek design looks fast and the heel-to-toe Max Air unit puts a little extra bounce in your stride.'
     },
-    price: '12000',
+    price: 20000,
     category: 1,
     colors: [9, 8, 5],
     created_at: 1659481778261,

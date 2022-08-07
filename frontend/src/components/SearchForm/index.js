@@ -34,6 +34,7 @@ const SearchForm = () => {
       <Input
         type='text'
         placeholder='Busca un producto...'
+        required
         onChange={onSearchChange}
         value={store.search}
       />
