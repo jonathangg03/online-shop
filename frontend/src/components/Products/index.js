@@ -7,10 +7,12 @@ import Product from '../Product'
 import { types } from '../../reducers'
 import { FILTERS } from '../../data'
 import FilterModal from '../FilterModal'
+import useHandleModal from '../../hooks/useHandleModal'
 
 const ProductsComponent = ({ products }) => {
   const { store, dispatch } = useContext(Context)
   const [categoryName, setCategoryName] = useState('Todos')
+  const { handleModal } = useHandleModal({ dispatch, store })
 
   useEffect(() => {
     if (store.category > -1) {
@@ -27,10 +29,7 @@ const ProductsComponent = ({ products }) => {
     <section>
       <Head>
         <h3>Filtrando: {categoryName}</h3>
-        <button
-          type='button'
-          onClick={() => dispatch({ type: types.OPEN_MODAL })}
-        >
+        <button type='button' onClick={handleModal}>
           <h5>Filtrar</h5>
           <HiFilter />
         </button>
