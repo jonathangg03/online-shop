@@ -25,7 +25,7 @@ const Product = () => {
       />
       <ProductButtons />
       <Modal>
-        <CartModal />
+        <CartModal product={mockProduct} />
       </Modal>
     </>
   )

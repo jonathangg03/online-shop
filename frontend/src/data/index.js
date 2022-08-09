@@ -13,4 +13,17 @@ const CATEGORIES = {
   ropa: 2
 }
 
-export { FILTERS, CATEGORIES }
+const COLORS = {
+  Blanco: 0,
+  Negro: 1,
+  Azul: 2,
+  Verde: 3,
+  Amarillo: 4,
+  Rosa: 5,
+  Morado: 6,
+  Gris: 7,
+  Celeste: 8,
+  Rojo: 9
+}
+
+export { FILTERS, CATEGORIES, COLORS }
