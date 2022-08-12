@@ -2,7 +2,7 @@ import { products } from '../../fakeDB/products'
 import ProductDetails from '../../components/ProductDetails'
 import ProductButtons from '../../components/ProductButtons'
 import ProductImages from '../../components/ProductImages'
-import CartModal from '../../components/CartModal'
+import ProductModal from '../../components/ProductModal'
 import Modal from '../../components/ModalContainer'
 
 const mockProduct = products[0]
@@ -25,7 +25,7 @@ const Product = () => {
       />
       <ProductButtons />
       <Modal>
-        <CartModal product={mockProduct} />
+        <ProductModal product={mockProduct} />
       </Modal>
     </>
   )
